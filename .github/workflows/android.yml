@@ -42,7 +42,6 @@ jobs:
     permissions:
       contents: write
     env:
-      ANDROID_KEYSTORE_PATH: ${{ runner.temp }}/release.jks
       ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
       ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
       ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
@@ -76,11 +75,14 @@ jobs:
         shell: bash
         env:
           ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PATH: ${{ runner.temp }}/release.jks
         run: |
           test -n "${ANDROID_KEYSTORE_BASE64}"
           printf '%s' "${ANDROID_KEYSTORE_BASE64}" | base64 --decode > "${ANDROID_KEYSTORE_PATH}"
 
       - name: Build signed release APK
+        env:
+          ANDROID_KEYSTORE_PATH: ${{ runner.temp }}/release.jks
         run: ./gradlew --no-daemon assembleRelease
 
       - name: Verify and name APK
