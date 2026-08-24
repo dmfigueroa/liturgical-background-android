@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Liturgical Wallpaper</string>
+    <string name="today">Today</string>
+    <string name="first_vespers">First Vespers</string>
+    <string name="automatic_wallpaper">Automatic wallpaper</string>
+    <string name="wallpapers">Wallpapers</string>
+    <string name="change">Change</string>
+    <string name="not_configured">Not configured</string>
+    <string name="calendar">Calendar</string>
+    <string name="colombian_ordo">Colombian Ordo</string>
+    <string name="last_checked">Last checked: %1$s</string>
+    <string name="available_through">Available through: %1$s</string>
+    <string name="refresh">Refresh</string>
+    <string name="settings">Settings</string>
+    <string name="vespers_time">First Vespers time</string>
+    <string name="apply_to">Apply to</string>
+    <string name="home_screen">Home screen</string>
+    <string name="home_and_lock">Home + lock screen</string>
+    <string name="apply_now">Apply now</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_calendar">No calendar downloaded yet</string>
+    <string name="server_unavailable">Calendar server unavailable; using cached calendar</string>
+    <string name="calendar_expired">Calendar expired</string>
+    <string name="wallpaper_updated">Wallpaper updated</string>
+    <string name="wallpaper_failed">Wallpaper update failed</string>
+    <string name="wallpaper_missing">%1$s wallpaper not configured</string>
+    <string name="calendar_updated">Calendar updated</string>
+    <string name="debug_tools">Debug transition tools</string>
+    <string name="run_transition">Run transition now</string>
+    <string name="simulated_time">Simulated time: %1$s</string>
+    <string name="actual_time">Use actual time</string>
+    <string name="green">Green</string><string name="white">White</string>
+    <string name="red">Red</string><string name="violet">Violet</string>
+    <string name="rose">Rose</string>
+    <string name="unknown">Unknown</string>
+    <string name="color_swatch">%1$s liturgical color</string>
+    <string name="using_cache">Using cached calendar</string>
+    <string name="rank_and_season">%1$s · %2$s</string>
+</resources>
