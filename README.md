@@ -104,4 +104,4 @@ The generated APK is at `app/build/outputs/apk/debug/app-debug.apk`.
 
 Every push and pull request runs the JVM tests, Android lint, and a debug build. Pushing a version tag such as `v0.1.0` additionally builds and verifies a signed release APK, then publishes it to GitHub Releases with generated release notes.
 
-Release signing uses the `ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS`, and `ANDROID_KEY_PASSWORD` GitHub Actions secrets. The signing key is never stored in this repository.
+Release signing uses the `ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS`, and `ANDROID_KEY_PASSWORD` secrets in the protected `release` GitHub environment. Tagged releases require maintainer approval before the job can access them. The signing key is never stored in this repository.
